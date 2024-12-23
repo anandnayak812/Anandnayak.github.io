@@ -4,123 +4,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anand Nayak - QA Automation Engineer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lora:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
     <style>
+        /* Base Styles */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f2f5;
+            background-color: #f4f6f9;
             color: #333;
         }
+
         .container {
-            max-width: 800px;
-            margin: 50px auto;
+            max-width: 900px;
+            margin: 40px auto;
             padding: 20px;
             background-color: #fff;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            animation: fadeIn 1.5s ease-in-out;
         }
-        .header {
-            background-color: #3498db;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
+
+        h1, h2 {
+            font-family: 'Lora', serif;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
         h1 {
+            font-size: 2.8em;
+            text-align: center;
             margin: 0;
-            font-size: 2.5em;
         }
+
         h2 {
-            color: #3498db;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 5px;
-            margin-top: 20px;
+            font-size: 2em;
+            margin-top: 30px;
+            color: #2980b9;
+            border-bottom: 2px solid #2980b9;
+            padding-bottom: 10px;
         }
-        p, ul {
-            line-height: 1.6;
-            color: #666;
-            margin: 10px 0;
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin: 15px 0;
+            color: #7f8c8d;
         }
+
         ul {
             padding-left: 20px;
+            margin: 10px 0;
         }
-        .contact-info a {
-            color: #3498db;
-            text-decoration: none;
+
+        li {
+            margin: 10px 0;
         }
-        .contact-info a:hover {
-            text-decoration: underline;
+
+        .contact-info {
+            list-style: none;
+            padding-left: 0;
+            font-size: 1.1em;
         }
+
+        .contact-info i {
+            color: #2980b9;
+            margin-right: 10px;
+        }
+
         .footer {
-            background-color: #3498db;
-            color: white;
             text-align: center;
-            padding: 10px 20px;
-            margin-top: 20px;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
+            background-color: #2980b9;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 0 0 15px 15px;
         }
+
         .footer a {
             color: white;
             text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.1em;
         }
+
         .footer a:hover {
             text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .contact-info {
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p, ul {
+                font-size: 1em;
+            }
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background-color: #3498db;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Anand Nayak</h1>
-            <p>QA Automation Engineer at Cigniti Technologies</p>
-        </div>
-        
+        <h1>Anand Nayak</h1>
+        <p style="text-align: center; font-size: 1.2em; color: #2980b9;">QA Automation Engineer | DevOps Specialist</p>
+
         <h2>Professional Summary</h2>
-        <p>Experienced QA Engineer with 3+ years in Automation Testing and 1.5+ years in DevOps Tools (Github, Jenkins, Docker). Proficient in end-to-end testing across STLC and SDLC phases, adept in Functionality, Regression, Integration, UAT, Smoke, Performance, and Browser Compatibility testing. Skilled in STLC phases, including Test Scenario identification, Test Case creation, Execution, and Bug Tracking. Experienced in testing both Client and Web Applications. Passionate about mentoring and staying updated with emerging technologies. DevOps Engineer with expertise in building CI/CD pipelines through Jenkins and Github. Tools proficiency includes Selenium, TestNG, Git, Jira, and Browserstack.</p>
+        <p>Skilled QA Automation Engineer with over 3 years of experience in automated testing frameworks (Selenium, RestAssured, Jenkins), and proficiency in DevOps tools. Adept at designing, developing, and executing automated test cases, integrating CI/CD pipelines, and ensuring the quality of web and mobile applications. Passionate about driving continuous improvement and enhancing testing methodologies.</p>
 
         <h2>Experience</h2>
-        <p><strong>Cigniti Technologies</strong><br>
-        QA Automation Engineer<br>
-        Jan 2022 - Present<br>
-        Telangana, India</p>
+        <p><strong>Cigniti Technologies (A Coforge Company)</strong><br>
+        <span style="font-style: italic;">QA Automation Engineer | Jan 2022 - Present</span><br>
+        Hyderabad, Telangana, India</p>
+        <ul>
+            <li>Designed and developed automated test cases using Selenium WebDriver and TestNG for multiple projects.</li>
+            <li>Integrated Jenkins with GitHub to implement continuous integration pipelines, reducing deployment time by 30%.</li>
+            <li>Worked closely with development teams to identify testing requirements and automate regression and smoke testing for faster release cycles.</li>
+            <li>Developed and maintained RestAssured scripts for API testing, ensuring seamless communication between services.</li>
+        </ul>
 
         <h2>Education</h2>
         <p><strong>Auroras Engineering College</strong><br>
-        Bachelor of Technology - BTech, Civil Engineering<br>
-        Aug 2018 - Jun 2021<br>
+        Bachelor of Technology (BTech), Civil Engineering | 2018 - 2021<br>
+        CGPA: 8.5/10<br>
         Hyderabad, Telangana, India</p>
 
         <h2>Certifications</h2>
         <ul>
-            <li><strong>SDET Professional</strong><br>
-            Cigniti Technologies<br>
-            Issued Jun 2024</li>
-            <li><strong>Core DevOps Skills: DevOps Principles & Practices</strong><br>
-            Skillsoft<br>
-            Issued Feb 2024</li>
+            <li><strong>SDET Professional</strong> | Cigniti Technologies (Issued Jun 2024)</li>
+            <li><strong>Core DevOps Skills</strong> | Skillsoft (Issued Feb 2024)</li>
         </ul>
 
         <h2>Skills</h2>
         <ul>
-            <li>QA Automation</li>
-            <li>Selenium</li>
-            <li>Jenkins</li>
-            <li>Docker</li>
-            <li>Java</li>
+            <li>QA Automation (Selenium, TestNG, RestAssured)</li>
+            <li>CI/CD Tools (Jenkins, Docker, GitHub)</li>
+            <li>Programming Languages (Java, Python)</li>
+            <li>API Testing (Postman, RestAssured)</li>
+            <li>Version Control (Git, Bitbucket)</li>
         </ul>
 
-        <div class="footer">
-            <p>Contact Information</p>
-            <p class="contact-info">
-                Email: <a href="mailto:anandnayak812@gmail.com">anandnayak812@gmail.com</a><br>
-                LinkedIn: <a href="https://www.linkedin.com/in/anand-nayak-b29658234" target="_blank">www.linkedin.com/in/anand-nayak-b29658234</a><br>
-                GitHub: <a href="https://github.com/anandnayak812" target="_blank">github.com/anandnayak812</a><br>
-                Phone: +91 8639299934
-            </p>
-        </div>
+        <h2>Contact Information</h2>
+        <ul class="contact-info">
+            <li><i class="fas fa-envelope"></i> <a href="mailto:anandnayak812@gmail.com">anandnayak812@gmail.com</a></li>
+            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/anand-nayak-b29658234" target="_blank">LinkedIn</a></li>
+            <li><i class="fab fa-github"></i> <a href="https://github.com/anandnayak812" target="_blank">GitHub</a></li>
+            <li><i class="fas fa-phone-alt"></i> +91 8639299934</li>
+        </ul>
+
+        <a href="mailto:anandnayak812@gmail.com" class="btn">Contact Me</a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Anand Nayak. All Rights Reserved.</p>
     </div>
 </body>
 </html>
